@@ -1,0 +1,19 @@
+:root {
+  --orange: #D45B00;
+  --red: red;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+main {
+  background: #000;
+  color: #FFF;
+}
+
+.logo__top {
+  width: 74.78px;
+  margin-left: auto;
+}
+/*# sourceMappingURL=maps/style.css.map */

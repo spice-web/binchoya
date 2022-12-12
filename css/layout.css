@@ -1,0 +1,17 @@
+:root {
+  --orange: #D45B00;
+}
+
+body {
+  font-size: 2rem;
+  color: #262f2d;
+  background: #2aa47A;
+}
+
+/* =================================
+  background
+================================== */
+.bg-orange {
+  background: var(--orange);
+}
+/*# sourceMappingURL=maps/layout.css.map */

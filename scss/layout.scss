@@ -1,0 +1,15 @@
+// Layout - layout.scss
+@use "variable" as vars;
+
+body {
+  font-size: 2rem;
+  color: vars.$font_color;
+  background: vars.$bg_color;
+}
+
+/* =================================
+  background
+================================== */
+.bg-orange {
+  background: var(--orange);
+}

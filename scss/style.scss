@@ -1,0 +1,22 @@
+// Layout - layout.scss
+@use "config" as conf;
+
+// Home - home.scss
+body {
+  // font-size: 1rem;
+  // font-weight: normal;
+}
+
+main {
+  background: #000;
+  color: #FFF;
+}
+
+.logo {
+  &__top {
+    width: 74.78px;
+    margin-left: auto;
+    // margin-right: auto;
+  }
+}
+

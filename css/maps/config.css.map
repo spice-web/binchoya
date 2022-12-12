@@ -1,0 +1,1 @@
+{"version":3,"sources":["config.scss","config.css"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,UAAA;ACCF;;ADEA;EACE,kBAAA;ACCF","file":"../config.css","sourcesContent":[":root {\r\n  --orange: #D45B00;\r\n  --red:   red;\r\n}\r\n\r\n.txt-center {\r\n  text-align: center;\r\n}",":root {\n  --orange: #D45B00;\n  --red: red;\n}\n\n.txt-center {\n  text-align: center;\n}"]}
