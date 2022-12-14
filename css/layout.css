@@ -1,11 +1,22 @@
+@charset "UTF-8";
 :root {
   --orange: #D45B00;
+  --red: #C80A00;
 }
 
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
 body {
-  font-size: 2rem;
-  color: #262f2d;
-  background: #2aa47A;
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 16px;
+}
+
+.sans {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* =================================
@@ -14,4 +25,33 @@ body {
 .bg-orange {
   background: var(--orange);
 }
+
+/* =================================
+  container
+================================== */
+.container {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+.container.--sm {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.--lg {
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+}
+
+/* =================================
+  inner
+================================== */
+/* =================================
+  box
+================================== */
 /*# sourceMappingURL=maps/layout.css.map */

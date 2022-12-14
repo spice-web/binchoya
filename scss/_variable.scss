@@ -1,7 +1,72 @@
 // 設定 - _variable.scss
 :root {
   --orange: #D45B00;
+  --red: #C80A00;
 }
 
 $font_color: #262f2d;
 $bg_color: #2aa47A;
+
+/* ==============================
+  || breakpoints
+============================== */
+$breakpoints: (
+  'xxs': 'screen and (min-width: 389px)',
+  'max-xxs': 'screen and (max-width: 389px)',
+  'xs': 'screen and (min-width: 400px)',
+  'max-sm': 'screen and (max-width: 650px)',
+  'sm': 'screen and (min-width: 650px)',
+  'max-md': 'screen and (max-width: 850px)',
+  'md': 'screen and (min-width: 850px)',
+  'lg': 'screen and (min-width: 980px)',
+  'xl': 'screen and (min-width: 1200px)',
+  ) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/* ==============================
+  中央寄せ
+============================== */
+@mixin center($direction) {
+  position: absolute;
+  @if $direction==xy {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  @else if $direction==x {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  @else if $direction==y {
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
+
+@mixin l_spacing($spacing) {
+  letter-spacing: ($spacing / 1000 ) + em;
+}
+
+@mixin height($fz, $high) {
+  line-height: calc( $high / $fz);
+}
+
+@mixin del-space($line-height) {
+  &::before, &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      display: block;
+  }
+  &::before {
+      margin-top: calc((1 - #{$line-height}) * .5em);
+  }
+  &::after {
+      margin-bottom: calc((1 - #{$line-height}) * .5em);
+  }
+}

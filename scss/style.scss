@@ -1,22 +1,41 @@
 // Layout - layout.scss
-@use "config" as conf;
+@use "variable" as *;
 
-// Home - home.scss
-body {
-  // font-size: 1rem;
-  // font-weight: normal;
-}
-
-main {
-  background: #000;
-  color: #FFF;
-}
-
+/* =========================
+  index
+========================= */
 .logo {
   &__top {
     width: 74.78px;
-    margin-left: auto;
-    // margin-right: auto;
+    margin: 2rem auto;
   }
 }
 
+.catch {
+  font-weight: 600;
+  text-indent: -2em;
+  letter-spacing: 6.6px;
+}
+
+/* =========================
+  slider
+========================= */
+.slick-prev {
+  left: 25px;
+  z-index: 101;
+}
+.slick-next {
+  right: 25px;
+}
+
+@include mq(sm) {
+  .slider_index {
+    margin-bottom: 6rem;
+      img {
+        width: 75%;
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+}

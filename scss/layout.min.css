@@ -1,0 +1,2 @@
+:root{--orange: #D45B00;--red: #C80A00}body{font-family:"Noto Serif JP",sans-serif;font-size:16px}.sans{font-family:"Noto Sans JP",sans-serif}.bg-orange{background:var(--orange)}.container{width:86%;margin-left:auto;margin-right:auto;padding-top:2rem;padding-bottom:6rem}.container.--sm{width:80%;margin-left:auto;margin-right:auto}.container.--lg{width:93%;margin-left:auto;margin-right:auto;padding-bottom:2rem}
+/*# sourceMappingURL=layout.min.css.map */
