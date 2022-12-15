@@ -19,7 +19,7 @@
   </div>
 
   <!-- オーバーレイ背景 -->
-  <!-- <div class="drawer__bg"></div> -->
+  <div class="drawer__bg"></div>
 
   <!-- ドロワーメニュー -->
   <div class="drawer__menu">

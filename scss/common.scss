@@ -1,6 +1,5 @@
 // Layout - layout.scss
 @use "variable" as *;
-@use "config" as conf;
 
 main {
   background: #000;
@@ -197,6 +196,49 @@ $transition-duration: .3s;
 }
 
 /* ==============================
+  ||footer nav
+============================== */
+.footer-nav {
+  &__hl-lv3 {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  &__list {
+    padding: 1.5rem 0;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__inner {
+    color: #fff;
+    width: 90%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__img {
+    margin-bottom: 1rem;
+  }
+  &__def {
+    text-align: center;
+  }
+  &__dttl {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    span {
+      display: block;
+      font-size: 0.75rem;
+    }
+  }
+  &__desc {
+    letter-spacing: 1.4px;
+  }
+}
+
+
+/* ==============================
   ||footer
 ============================== */
 .footer {
@@ -264,7 +306,10 @@ $transition-duration: .3s;
     margin-right: auto;
     display: flex;
     justify-content: center;
-
+    z-index: 2;
+    @include mq() {
+      display: none;
+    }
     > a {
       width: 48%;
       height: 54px;
@@ -276,6 +321,38 @@ $transition-duration: .3s;
       background: #C80A00;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
+      span {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          background-size: contain;
+          background-position: center center;
+        }
+        &.--tel {
+          padding-left: 27px;
+          &:before {
+            top: 0;
+            left: 0;
+            width: 24.66px;
+            height: 14.75px;
+            margin-top: 3px;
+            background-image: url('../images/icon/mail.webp');
+          }
+        }
+        &.--webshop {
+          padding-left: 23px;
+          &:before {
+            top: 0;
+            left: 0;
+            width: 19.92px;
+            height: 23.73px;
+            margin-top: 0;
+            background-image: url('../images/icon/webshop.webp');
+          }
+        }
+      }
     }
   }
 }

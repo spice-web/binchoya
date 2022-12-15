@@ -1,2 +1,2 @@
-:root{--orange: #D45B00;--red: #C80A00}.txt-center{text-align:center}.text{font-size:14px}@media screen and (min-width: 850px){.text{font-size:16px}}.txt-lg{font-size:1.375rem}.lh2{line-height:2}.mb15{margin-bottom:1.5rem}
+:root{--orange: #D45B00;--red: #C80A00}.txt-center{text-align:center}.nowrap{display:inline-block}.br--md{display:none}@media screen and (min-width: 850px){.br--md{display:block}}.br--dis-md{display:block}@media screen and (min-width: 850px){.br--dis-md{display:none}}.text{font-size:14px;line-height:2}@media screen and (min-width: 850px){.text{font-size:16px}}.txt-lg{font-size:1.375rem}.lh2{line-height:2}.mb15{margin-bottom:1.5rem}.no-deco{text-decoration:none}.no-deco *{text-decoration:none}
 /*# sourceMappingURL=config.min.css.map */

@@ -14,11 +14,33 @@
   text-align: center;
 }
 
+.nowrap {
+  display: inline-block;
+}
+
+.br--md {
+  display: none;
+}
+@media screen and (min-width: 850px) {
+  .br--md {
+    display: block;
+  }
+}
+.br--dis-md {
+  display: block;
+}
+@media screen and (min-width: 850px) {
+  .br--dis-md {
+    display: none;
+  }
+}
+
 /* =========================
   ||font-size
 ========================= */
 .text {
   font-size: 14px;
+  line-height: 2;
 }
 @media screen and (min-width: 850px) {
   .text {
@@ -42,5 +64,15 @@
 ========================= */
 .mb15 {
   margin-bottom: 1.5rem;
+}
+
+/* =========================
+  ||Link
+========================= */
+.no-deco {
+  text-decoration: none;
+}
+.no-deco * {
+  text-decoration: none;
 }
 /*# sourceMappingURL=config.css.map */

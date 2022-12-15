@@ -4,6 +4,7 @@
 body {
   font-family: "Noto Serif JP", sans-serif;
   font-size: 16px;
+  letter-spacing: 0.9px;
 }
 
 .sans { font-family: 'Noto Sans JP', sans-serif; }
@@ -13,6 +14,30 @@ body {
 ================================== */
 .bg-orange {
   background: var(--orange);
+  &.pats {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: -12px;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      background: var(--orange);
+      border-bottom: 2px solid #000;
+    }
+    &:after {
+      bottom: -12px;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      background: var(--orange);
+      border-top: 2px solid #000;
+    }
+  }
 }
 
 /* =================================
@@ -20,9 +45,10 @@ body {
 ================================== */
 .container {
   width: 86%;
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2rem;
+  padding-top: 3.5rem;
   padding-bottom: 6rem;
   &.--sm {
     width: 80%;

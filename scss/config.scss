@@ -4,6 +4,24 @@
 .txt-center {
   text-align: center;
 }
+.nowrap {
+  display: inline-block;
+}
+
+.br {
+  &--md {
+    display: none;
+    @include mq() {
+      display: block;
+    }
+  }
+  &--dis-md {
+    display: block;
+    @include mq() {
+      display: none;
+    }
+  }
+}
 
 
 /* =========================
@@ -11,6 +29,7 @@
 ========================= */
 .text {
   font-size: 14px;
+  line-height: 2;
   @include mq() {
     font-size: 16px;
   }
@@ -35,4 +54,14 @@
 ========================= */
 .mb15 {
   margin-bottom: 1.5rem;
+}
+
+/* =========================
+  ||Link
+========================= */
+.no-deco {
+  text-decoration: none;
+  * {
+    text-decoration: none;
+  }
 }
