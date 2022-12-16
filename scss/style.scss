@@ -24,7 +24,9 @@
   }
   .introduction {
     display: grid;
-    grid-template-columns: calc((100% - 105px )/2) 105px calc((100% - 105px )/2);
+    grid-template-columns: calc((100% - 105px) / 2) 105px calc(
+        (100% - 105px) / 2
+      );
     align-items: center;
     gap: 2rem;
     .logo {
@@ -55,7 +57,6 @@
       margin: 0;
     }
   }
-
 }
 
 .noren {
@@ -70,7 +71,7 @@
     text-align: center;
     line-height: 60px;
     display: inline-block;
-    background-image: url('../images/parts/noren.webp');
+    background-image: url("../images/parts/noren.webp");
     background-size: contain;
     background-position: center center;
   }
@@ -79,20 +80,17 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
-    .food_menu--lh-lv2 {
+    .food_index--lh-lv2 {
       grid-column: 1 / 4;
       grid-row: 1 / 2;
     }
   }
 }
 
-
-// food_menu information
-.food_menu {
+// food_index information
+.food_index {
   @include mq() {
-    .food_menu {
-      grid-row: 2 / 3;
-    }
+    grid-row: 2 / 3;
   }
   &--lh-lv2 {
     font-size: 1.375rem;
@@ -144,8 +142,8 @@
 // 経歴
 .career {
   &__hl-lv2 {
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     padding: 0.75rem 0;
     text-align: center;
     font-size: 1.125rem;
@@ -198,11 +196,134 @@
         grid-row: 1 / 3;
         margin-left: -30px;
       }
-
     }
   }
 }
 
+/* =========================
+  FOOD
+========================= */
+.food-menu {
+  &__wrap {
+    margin-bottom: 2rem;
+    &--sub {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #fff;
+    }
+    > dd {
+      padding-left: 1rem;
+    }
+  }
+
+  &__title {
+    color: var(--orange);
+    &--sub {
+      text-align: center;
+    }
+  }
+}
+
+/* menu design */
+dl.food-menu {
+  width: 100%;
+  font-size: 1rem;
+}
+dl.food-menu div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 0;
+  align-items: center;
+}
+dl.food-menu div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+  border-bottom: dotted 1px #fff;
+}
+dl.food-menu dt {
+  margin: 0;
+  padding: 0 5px 0 0;
+  background-color: #000;
+  z-index: 2;
+  text-align: left;
+}
+dl.food-menu dd {
+  margin: 0;
+  padding: 0 0 0 5px;
+  background-color: #000;
+  z-index: 2;
+  text-align: right;
+}
+
+/* background */
+body {
+  background-color: #e5e5e5;
+}
+section.test_area {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* =========================
+  ||sales
+========================= */
+
+/* =========================
+  shopInfo
+========================= */
+.page_shopInfo {
+  .container {
+    padding-bottom: 2rem;
+  }
+}
+
+.shopInfo {
+  &__wrap {
+    margin-bottom: 4rem;
+  }
+  &__def {
+    border-top: 1px solid #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 2;
+    &:last-child {
+      border-bottom: 1px solid #fff;
+    }
+    @include mq() {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      text-align: left;
+      padding: 1.5rem 0 1.5rem 1rem;
+    }
+  }
+}
+
+/***** css *****/
+
+#gmap {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+  height: 100vw;
+  max-height: 518px;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 801px) {
+  .map {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+  }
+}
 
 /* =========================
   slider
@@ -218,11 +339,11 @@
 @include mq(sm) {
   .slider_index {
     margin-bottom: 6rem;
-      img {
-        width: 75%;
-        max-width: 260px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    img {
+      width: 75%;
+      max-width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

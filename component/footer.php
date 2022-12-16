@@ -1,23 +1,35 @@
+<?php $webshop = "/" ;?>
+
 <div class="container footer__nav">
-  <h3 class="footer-nav__hl-lv3">びんちょうやの味を<br>ご自宅でもお楽しみいただけます！</h3>
+  <h3 class="footer-nav__hl-lv3">びんちょうやの味を<br class="br--dis-md">ご自宅でもお楽しみいただけます！</h3>
+
+  <div class="sale__button">
+    <a href="/sales"><img src="/images/button/sales.png" alt="びんちょうや店前自動販売機" width="100%" height="auto"></a>
+    <a href="<?=$webshop;?>"><img src="/images/button/webshop.png" alt="びんちょうやオンラインショップ" width="100%" height="auto"></a>
+  </div>
+
     <?php
     $items = [
       ['food','びんちょうやメニュー','メニュー','MENU', '博多水炊きやもつ鍋などを中心に、様々な料理でお客さまをおもてなしします。'],
       ['sales','びんちょうやのお店前にある自動販売機','お持ち帰り','TAKEOUT','水炊きはもちろん、パスタやラーメンにも使えて便利な自家製「博多水炊きスープ」が大好評！'],
-      ['in', '店内イメージ図','店舗情報','INFORMATION','アクセス、営業時間や席数など<span class="nowrap">お店の詳しい情報は</span><span class="nowrap">こちらでご確認ください。</span>'],
+      ['info', '店内イメージ図','店舗情報','INFORMATION','アクセス、営業時間や席数など<span class="nowrap">お店の詳しい情報は</span><span class="nowrap">こちらでご確認ください。</span>'],
     ]
     ;?>
-  <?php foreach($items as $value) : ?>
-    <div class="bg-orange footer-nav__list">
-      <div class="footer-nav__inner">
-          <figure class="footer-nav__img"><img src="/images/footer/f_<?=$value[0] ;?>.webp" alt="<?=$value[1] ;?>" width="100%" height="auto"></figure>
+  
+  <div class="footer-nav__wrap">
+    <?php foreach($items as $value) : ?>
+      <div class="bg-orange footer-nav__list">
+        <div class="footer-nav__inner">
+          <figure class="footer-nav__img"><a href="<?=$value[0];?>"><img src="/images/footer/f_<?=$value[0];?>.webp" alt="<?=$value[1] ;?>" width="100%" height="auto"></a></figure>
           <dl class="footer-nav__def">
-            <dt class="footer-nav__dttl"><?=$value[2] ;?><span><?=$value[3] ;?></span></dt>
-            <dd class="footer-nav__desc text"><?=$value[4] ;?></dd>
+            <dt class="footer-nav__dttl"><a href="<?=$value[0];?>"><?=$value[2] ;?><span><?=$value[3] ;?></span></a></dt>
+            <dd class="footer-nav__desc text"><a href="<?=$value[0];?>"><?=$value[4] ;?></a></dd>
           </dl>
+        </div>
       </div>
-    </div>
-  <?php endforeach; ?>
+    <?php endforeach; ?>
+  </div>
+
 </div>
 
 </main>

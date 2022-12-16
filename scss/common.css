@@ -12,11 +12,11 @@
 ============================== */
 main {
   background: #000;
-  color: #FFF;
+  color: #fff;
 }
 
 /* ==============================
-  Header
+  ||Header
 ============================== */
 .header {
   height: 70px;
@@ -127,7 +127,7 @@ main {
 }
 .menu__item {
   line-height: 3;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
 }
 
 @media screen and (min-width: 850px) {
@@ -183,6 +183,34 @@ main {
   }
 }
 /* ==============================
+  || SALE BUTTON
+============================== */
+.sale__button {
+  max-width: 796px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+.sale__button a {
+  display: block;
+  width: 100%;
+  max-width: 382px;
+  margin: 0 auto 1rem;
+}
+.sale__button a:hover {
+  opacity: 0.75;
+}
+@media screen and (min-width: 850px) {
+  .sale__button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sale__button a {
+    margin: 0 0.5rem;
+  }
+}
+
+/* ==============================
   ||footer nav
 ============================== */
 .footer-nav__hl-lv3 {
@@ -191,11 +219,25 @@ main {
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 850px) {
+  .footer-nav__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-nav__wrap > * {
+    width: 32%;
+  }
+}
 .footer-nav__list {
   padding: 1.5rem 0;
 }
 .footer-nav__list:not(:last-child) {
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 850px) {
+  .footer-nav__list:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .footer-nav__inner {
   color: #fff;
@@ -203,6 +245,12 @@ main {
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+.footer-nav__inner a {
+  text-decoration: none;
+}
+.footer-nav__inner a:hover {
+  opacity: 0.75;
 }
 .footer-nav__img {
   margin-bottom: 1rem;
@@ -229,7 +277,7 @@ main {
   background-image: url("../images/bg/bg_menu.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFF;
+  color: #fff;
   font-size: 0.875rem;
   padding-top: 2.5rem;
   padding-bottom: 5rem;
@@ -267,7 +315,7 @@ main {
 .footer__info {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #fff;
   display: grid;
   grid-template-columns: auto 1fr;
 }
@@ -302,7 +350,7 @@ main {
   text-align: center;
   margin-left: 0.15rem;
   margin-right: 0.15rem;
-  background: #C80A00;
+  background: #c80a00;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }

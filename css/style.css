@@ -89,30 +89,30 @@
     grid-template-rows: repeat(2, auto);
     gap: 10px;
   }
-  .noren .food_menu--lh-lv2 {
+  .noren .food_index--lh-lv2 {
     grid-column: 1/4;
     grid-row: 1/2;
   }
 }
 
-.food_menu {
+.food_index {
   position: relative;
   z-index: 1;
   margin-top: 85px;
   text-align: center;
 }
 @media screen and (min-width: 850px) {
-  .food_menu .food_menu {
+  .food_index {
     grid-row: 2/3;
   }
 }
-.food_menu--lh-lv2 {
+.food_index--lh-lv2 {
   font-size: 1.375rem;
   font-weight: 600;
   letter-spacing: 2.2px;
   text-align: center;
 }
-.food_menu:before {
+.food_index:before {
   z-index: -1;
   content: "";
   width: 238px;
@@ -126,33 +126,33 @@
   background-size: contain;
 }
 @media screen and (min-width: 850px) {
-  .food_menu.--001 {
+  .food_index.--001 {
     grid-column: 1/2;
   }
 }
-.food_menu.--001:before {
+.food_index.--001:before {
   background-image: url(../images/index/food_motsu.webp);
 }
 @media screen and (min-width: 850px) {
-  .food_menu.--002 {
+  .food_index.--002 {
     grid-column: 2/3;
   }
 }
-.food_menu.--002:before {
+.food_index.--002:before {
   background-image: url(../images/index/food_mizu.webp);
 }
 @media screen and (min-width: 850px) {
-  .food_menu.--003 {
+  .food_index.--003 {
     grid-column: 3/4;
   }
 }
-.food_menu.--003:before {
+.food_index.--003:before {
   background-image: url(../images/index/food_ramen.webp);
 }
 
 .career__hl-lv2 {
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   padding: 0.75rem 0;
   text-align: center;
   font-size: 1.125rem;
@@ -204,6 +204,129 @@
   }
 }
 
+/* =========================
+  FOOD
+========================= */
+.food-menu__wrap {
+  margin-bottom: 2rem;
+}
+.food-menu__wrap--sub {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+}
+.food-menu__wrap > dd {
+  padding-left: 1rem;
+}
+.food-menu__title {
+  color: var(--orange);
+}
+.food-menu__title--sub {
+  text-align: center;
+}
+
+/* menu design */
+dl.food-menu {
+  width: 100%;
+  font-size: 1rem;
+}
+
+dl.food-menu div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 0;
+  align-items: center;
+}
+
+dl.food-menu div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+  border-bottom: dotted 1px #fff;
+}
+
+dl.food-menu dt {
+  margin: 0;
+  padding: 0 5px 0 0;
+  background-color: #000;
+  z-index: 2;
+  text-align: left;
+}
+
+dl.food-menu dd {
+  margin: 0;
+  padding: 0 0 0 5px;
+  background-color: #000;
+  z-index: 2;
+  text-align: right;
+}
+
+/* background */
+body {
+  background-color: #e5e5e5;
+}
+
+section.test_area {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* =========================
+  ||sales
+========================= */
+/* =========================
+  shopInfo
+========================= */
+.page_shopInfo .container {
+  padding-bottom: 2rem;
+}
+
+.shopInfo__wrap {
+  margin-bottom: 4rem;
+}
+.shopInfo__def {
+  border-top: 1px solid #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+.shopInfo__def:last-child {
+  border-bottom: 1px solid #fff;
+}
+@media screen and (min-width: 850px) {
+  .shopInfo__def {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    text-align: left;
+    padding: 1.5rem 0 1.5rem 1rem;
+  }
+}
+
+/***** css *****/
+#gmap {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 800px;
+  height: 100vw;
+  max-height: 518px;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 801px) {
+  .map {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+  }
+}
 /* =========================
   slider
 ========================= */
