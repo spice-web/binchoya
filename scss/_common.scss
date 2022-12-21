@@ -434,9 +434,9 @@ $transition-duration: 0.3s;
   ||footer
 ============================== */
 .footer {
-  background-image: url("../images/bg/bg_menu.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../images/bg/bg_header.webp");
+  background-repeat: repeat;
+  background-size: 300px auto;
   color: #fff;
   font-size: 0.875rem;
   padding-top: 5.5rem;
