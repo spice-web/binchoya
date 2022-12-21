@@ -1,4 +1,8 @@
 <body class="<?= $pageName; ?>">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXQT2P2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <header class="header">
     <h1 class="header__logo"><a href="/"><img src="./images/logo/logo_wide.webp" alt="博多うまかもんびんちょうや" width="100%" height="auto"></a></h1>
 
