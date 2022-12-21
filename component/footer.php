@@ -10,7 +10,7 @@
     <h3 class="footer-nav__hl-lv3">びんちょうやの味を<br class="br--dis-md">ご自宅でもお楽しみいただけます！</h3>
 
     <div class="sale__button">
-      <a href="/takeout.php"><img src="/images/button/sales.png" alt="びんちょうや店前自動販売機" width="100%" height="auto"></a>
+      <a href="/takeout"><img src="/images/button/sales.png" alt="びんちょうや店前自動販売機" width="100%" height="auto"></a>
       <a href="<?= $webshop; ?>" target="_blank" rel="noreferrer noopener"><img src="/images/button/webshop.png" alt="びんちょうやオンラインショップ" width="100%" height="auto"></a>
     </div>
 
@@ -30,15 +30,15 @@
         <li class="footer-nav__list--head"></li>
         <li class="footer-nav__inner">
           <figure class="footer-nav__img">
-            <a href="<?= $value[0]; ?>.php"><img src="/images/footer/f_<?= $value[0]; ?>.webp" alt="<?= $value[1]; ?>" width="100%" height="auto">
+            <a href="<?= $value[0]; ?>"><img src="/images/footer/f_<?= $value[0]; ?>.webp" alt="<?= $value[1]; ?>" width="100%" height="auto">
             </a>
           </figure>
           <dl class="footer-nav__def">
             <dt class="footer-nav__dttl">
-              <a href="<?= $value[0]; ?>.php"><?= $value[2]; ?><span><?= $value[3]; ?></span></a>
+              <a href="<?= $value[0]; ?>"><?= $value[2]; ?><span><?= $value[3]; ?></span></a>
             </dt>
             <dd class="footer-nav__desc text">
-              <a href="<?= $value[0]; ?>.php"><?= $value[4]; ?></a>
+              <a href="<?= $value[0]; ?>"><?= $value[4]; ?></a>
             </dd>
           </dl>
         </li>

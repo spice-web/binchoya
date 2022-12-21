@@ -5,3 +5,7 @@
 /scss/*.css
 
 # gulp
+
+# images
+/old/
+*.old
