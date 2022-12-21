@@ -43,7 +43,7 @@
             <figcaption class="takeout-menu__cap text"><?= $value[1]; ?></figcaption>
           </figure>
         </li>
-        <li class="takeout-menu__price"><?= $value[2]; ?><?= $value[3]; ?></li>
+        <li class="takeout-menu__price"><span><?= $value[2]; ?></span><span><?= $value[3]; ?></span></li>
       </ul>
     <?php endforeach; ?>
   </div>
