@@ -4,7 +4,7 @@
 </head>
 
 <?php include('./component/header.php'); ?>
-<?php include('./component/PageTItle.php'); ?>
+<?php include('./component/PageTitle.php'); ?>
 
 <div class="container --sm">
   <h2 class="hl-red">店舗情報</h2>
