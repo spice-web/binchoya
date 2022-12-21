@@ -4,7 +4,7 @@
 </head>
 
 <?php include('./component/header.php'); ?>
-<?php include('./component/PageTItle.php'); ?>
+<?php include('./component/PageTitle.php'); ?>
 
 <!-- contents -->
 <div class="container --sm">
