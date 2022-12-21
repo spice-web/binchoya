@@ -4,7 +4,7 @@
 </head>
 
 <?php include('./component/header.php'); ?>
-<?php include('./component/PageTitle.php'); ?>
+<?php include('./component/PageTItle.php'); ?>
 
 <!-- contents -->
 <div class="container --sm">
@@ -167,7 +167,7 @@
             <?php foreach ($items as $value) : ?>
               <div>
                 <dt><?= $value[0]; ?></dt>
-                <dd>&yen;<?= $value[1]; ?></dd>
+                <dd><?= $value[1]; ?></dd>
               </div>
             <?php endforeach; ?>
           </dl><!--  -->
@@ -192,7 +192,7 @@
             <?php foreach ($items as $value) : ?>
               <div>
                 <dt><?= $value[0]; ?></dt>
-                <dd>&yen;<?= $value[1]; ?></dd>
+                <dd><?= $value[1]; ?></dd>
               </div>
             <?php endforeach; ?>
           </dl><!-- 一品料理 -->
@@ -218,7 +218,7 @@
             <?php foreach ($items as $value) : ?>
               <div>
                 <dt><?= $value[0]; ?></dt>
-                <dd>&yen;<?= $value[1]; ?></dd>
+                <dd><?= $value[1]; ?></dd>
               </div>
             <?php endforeach; ?>
           </dl><!-- お肉料理 -->
@@ -240,7 +240,7 @@
             <?php foreach ($items as $value) : ?>
               <div>
                 <dt><?= $value[0]; ?></dt>
-                <dd>&yen;<?= $value[1]; ?></dd>
+                <dd><?= $value[1]; ?></dd>
               </div>
             <?php endforeach; ?>
           </dl><!-- ご飯もの -->
@@ -273,7 +273,7 @@
           <?php foreach ($items as $value) : ?>
             <div>
               <dt><?= $value[0]; ?></dt>
-              <dd>&yen;<?= $value[1]; ?></dd>
+              <dd><?= $value[1]; ?></dd>
             </div>
           <?php endforeach; ?>
         </dl><!--  -->
@@ -295,7 +295,7 @@
           <?php foreach ($items as $value) : ?>
             <div>
               <dt><?= $value[0]; ?></dt>
-              <dd>&yen;<?= $value[1]; ?></dd>
+              <dd><?= $value[1]; ?></dd>
             </div>
           <?php endforeach; ?>
         </dl><!--  -->
