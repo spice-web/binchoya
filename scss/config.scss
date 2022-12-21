@@ -1,4 +1,5 @@
 // Layout - layout.scss
+@use "_ress";
 @use "variable" as *;
 
 .txt-center {
@@ -6,6 +7,9 @@
 }
 .nowrap {
   display: inline-block;
+}
+.is-block {
+  display: block;
 }
 
 .br {
@@ -36,13 +40,14 @@
 
 .txt {
   &-lg {
-    font-size: 1.375rem;
+    font-size: 1.375rem; // 22px
   }
 }
 
 .note {
   font-size: 0.625rem;
 }
+
 .tel {
   text-align: center;
   font-size: 26px;
@@ -54,6 +59,17 @@
     font-size: 0.75rem;
   }
 }
+
+/* =========================
+  ||letter-spacing
+========================= */
+.ls-50 {
+  letter-spacing: 0.05em;
+}
+.ls-100 {
+  letter-spacing: 0.1em;
+}
+
 /* =========================
   ||line-height
 ========================= */
@@ -76,4 +92,16 @@
   * {
     text-decoration: none;
   }
+}
+.link_opacity {
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+/* =========================
+  ||image
+========================= */
+.radius {
+  border-radius: 10px;
 }

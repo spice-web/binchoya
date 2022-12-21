@@ -1,8 +1,11 @@
-<?php include('./component/head.php'); ?>
-
 <?php $pageName = "page_shopInfo"; ?>
 
+<?php include('./component/head.php'); ?>
+</head>
+
 <?php include('./component/header.php'); ?>
+<?php include('./component/PageTItle.php'); ?>
+
 <div class="container --sm">
   <h2 class="hl-red">店舗情報</h2>
   <div class="shopInfo__wrap">

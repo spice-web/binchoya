@@ -52,8 +52,76 @@ body {
 }
 
 /* =================================
+  ||title
+================================== */
+.page-title {
+  background-image: url("../images/bg/texture_title_w600.webp");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: contain;
+  text-align: center;
+  color: #342622;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  font-size: 1.5rem;
+  padding: 1.75rem 0 3.75rem;
+}
+.page-title span {
+  font-size: 1.125rem;
+  display: block;
+}
+
+/* =================================
+  Headline
+================================== */
+.hl-red {
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 4px;
+  background: var(--red);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* =================================
   container
 ================================== */
+.wrap__main {
+  position: relative;
+}
+.wrap__main:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../images/parts/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 120% 6vw;
+  background-position: center center;
+  width: 100%;
+  height: 6vw;
+  max-height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -4vw;
+}
+.wrap__main::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../images/parts/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 120% 6vw;
+  background-position: center center;
+  width: 100%;
+  height: 6vw;
+  max-height: 100px;
+  bottom: -4vw;
+  left: 50%;
+  transform: rotateX(180deg) translateX(-50%);
+}
+
 .container {
   width: 86%;
   max-width: 840px;
@@ -70,6 +138,7 @@ body {
 }
 .container.--lg {
   width: 93%;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2rem;
@@ -81,16 +150,4 @@ body {
 /* =================================
   box
 ================================== */
-/* =================================
-  Headline
-================================== */
-.hl-red {
-  font-size: 1rem;
-  line-height: 2;
-  letter-spacing: 4px;
-  background: var(--red);
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
 /*# sourceMappingURL=layout.css.map */
