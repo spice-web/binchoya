@@ -10,7 +10,8 @@
 ========================= */
 .logo {
   &__top {
-    width: 74.78px;
+    width: 104px;
+    padding-left: calc(104px - 74.78px);
     margin: 2rem auto;
   }
 }
@@ -49,8 +50,8 @@
 @include mq() {
   .introduction {
     display: grid;
-    grid-template-columns: calc((100% - 170px) / 2) 105px calc(
-        (100% - 170px) / 2
+    grid-template-columns: calc((100% - 204px) / 2) 140px calc(
+        (100% - 204px) / 2
       );
     align-items: center;
     gap: 2rem;
@@ -59,7 +60,8 @@
     }
     .logo {
       &__top {
-        width: 106px;
+        width: 140px;
+        padding-left: 34px;
         // margin: 0 1rem;
       }
     }
