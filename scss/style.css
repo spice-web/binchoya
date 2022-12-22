@@ -1267,11 +1267,11 @@ body {
 .food_index.--003:before {
   background-image: url(../images/index/food_ramen.webp);
 }
-.food_index figcaption.text {
+.food_index:not(.--003) figcaption.text {
   padding-bottom: 5rem;
 }
 @media screen and (min-width: 850px) {
-  .food_index figcaption.text {
+  .food_index:not(.--003) figcaption.text {
     padding-bottom: 0;
   }
 }
