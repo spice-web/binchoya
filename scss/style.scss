@@ -173,6 +173,12 @@
       background-image: url(../images/index/food_ramen.webp);
     }
   }
+  figcaption.text {
+    padding-bottom: 5rem;
+    @include mq() {
+      padding-bottom: 0;
+    }
+  }
 }
 
 @include mq() {
