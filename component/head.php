@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><?= $title; ?>【この感動をご家庭で】博多うまかもん びんちょうや | 博多水炊き・ラーメン</title>
+  <title><?= $title; ?>【広島市南区】博多うまかもん びんちょうや | 博多水炊き・ラーメン</title>
   <meta name="decsription" content="<?= $description; ?>">
   <link rel="icon" href="../images/icon/favicon.icon">
 
